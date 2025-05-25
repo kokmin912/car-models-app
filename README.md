@@ -16,33 +16,33 @@ The **Car Models Selection App** is a web application built using **Laravel** an
 
 ## 🔧 Installation
 ### Clone the Repository
-git clone https://github.com/kokmin912/car-models-app.git 
-cd car-models-app
+- git clone https://github.com/kokmin912/car-models-app.git  
+- cd car-models-app
 
 
 ### Install Dependencies
-composer install 
-npm install
+- composer install  
+- npm install
 
 
 ### Configure Environment Variables
-cp .env.example .env 
-php artisan key:generate
+- cp .env.example .env  
+- php artisan key:generate
 
 Edit `.env` to set database connection details.
 
 ### Run Migrations
-php artisan migrate
+- php artisan migrate
 
 
 ### Start the Server
-php artisan serve
+- php artisan serve
 
 
 ### Build the Frontend
-npm run dev
+- npm run dev
 
-Now, visit **http://127.0.0.1:8000/** in your browser. 🚀  
+### Now, visit **http://127.0.0.1:8000/** in your browser. 🚀  
 
 ## 🔥 Features
 - **Dynamic Brand & Model Selection** – Select a brand and get models instantly  
@@ -59,7 +59,24 @@ GET /models/{brand}
 
 
 ## 🏗 Project Structure
-car-models-app/ │── app/ │── bootstrap/ │── config/ │── database/ │── public/ │── resources/ │ ├── js/ │ │ ├── components/ │ │ │ ├── FipeModels.vue │ │ ├── app.js │ ├── views/ │ │ ├── welcome.blade.php │── routes/ │── vite.config.js │── package.json │── README.md
+car-models-app/  
+│── app/                # Laravel application files (Controllers, Models, etc.)  
+│── bootstrap/          # Bootstrap files for Laravel startup  
+│── config/             # Configuration files for Laravel  
+│── database/           # Database migrations and seeders  
+│── public/             # Public assets (CSS, JS, images)  
+│── resources/          # Main resources for frontend (Views, Components)  
+│   ├── js/            # JavaScript files (Vue components)  
+│   │   ├── components/ # Vue components  
+│   │   │   ├── FipeModels.vue # Main component for car selection  
+│   │   ├── app.js      # Vue app entry point  
+│   ├── views/         # Blade templates for frontend  
+│   │   ├── welcome.blade.php # Homepage view  
+│── routes/             # API and web routes  
+│── vite.config.js      # Vite configuration for asset compilation  
+│── package.json        # Node.js dependencies for frontend  
+│── README.md           # Project documentation (this file!)  
+
 
 
 ## ⚡ Troubleshooting
